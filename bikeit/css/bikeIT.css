@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+* {box-sizing: border-box;}
+body {
+	background-image:url(../img/background-lagii.jpg);
+	background-position: top center;
+	padding: 0px;
+	margin: 0px;
+}
+.clearfloat {
+font-size: 0px;
+margin: 0px;
+padding: 0px;
+clear: both;
+float: none;
+height: 0px;
+width: 0px;
+border: 0px none;
+line-height: 0px;
+}
+.outer {
+	width: 100%;
+	max-width: 1020px;
+	min-width:350px;
+	margin: 0px auto;
+	border: 0px solid #8F8F8F;
+	background-color:#424242;
+}
+/*-----------------------------------------------------------------*/
+.body1 {
+	width: 100%;
+}
+.body2 {
+	width: 100%;
+}
+.header1 {
+	width: 100%;
+}
+.footer1 {
+	width: 100%;
+}
+.header1 {
+	width: 100%;
+}
+.footer1 {
+	width: 100%;
+}
+.container1 {
+	width: 100%;
+	border: solid #FFFFFF;
+	background-color: #535353;
+}
+.container2 {
+	width: 100%;
+	border: solid #FFFFFF;
+	background-color: #535353;
+}
+.photo1 {
+	width: 50%;
+	float: right;
+}
+.photo2 {
+	width: 50%;
+	float: left;
+}
+.photo1 img {
+	width: 100%;
+	border-radius: 200px;
+}
+.photo2 img {
+	width: 100%;
+	border-radius: 200px;
+}
+/*-----------------------------------------------------------------*/
+nav {
+	width: 100%;
+}
+nav a {
+	width: 150px;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #FFFFFF;
+	font-size: 20px;
+}
+nav a:hover {
+	color: white;
+	background-color:#535353;
+}
+ul {
+    margin:0%;
+    padding:0%;
+    list-style-type:none;
+    text-align:center;
+}
+li {
+    display:inline-block;
+}
+/*-----------------------------------------------------------------*/
+.header {
+	text-align: center; 
+	height:none;
+	background-color:none;
+	padding: 0px;
+	margin: 0px;
+	color: black;
+}
+.main {
+	height:1000px;
+	background-color:white;
+	padding: 0px;
+	margin: 0px;
+}
+.gallery {
+	width:100%;
+	margin: 0%;
+	padding: 0%;
+  	top: 50%;
+	left: 50%;
+}
+.gallery img {
+	margin: 3% 3%;
+	width: 0%;
+	max-width: 1020px;
+	min-width:250px;
+	border-radius: 100px;
+}
+.gallery a:hover {
+	opacity: 50%;
+}
+.nav {
+	background-color:none;
+	padding: 0px;
+	margin: 1%;
+}
+
+.aboutus1 {
+	width: 60%;
+	height: auto;
+	background-color:none;
+	padding: 0px;
+	margin: 10px;	
+	float: left;
+	text-align: center;
+	color: white;
+}
+.leftside {
+	width: 30%;
+	height: auto;
+	padding: 1%;
+	margin: 0px;
+	float:left;
+	color: white;
+}
+.leftside p {
+	font-size: 15px;
+	
+}
+.leftside h2 {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: underline;
+}
+.article {
+	width: 35%;
+	height: auto;
+	padding: 1%;
+	margin: 0%;
+	float: left;
+	color: white;
+}
+.article img{
+	width: 100%;
+}
+.article p {
+	font-size: 15px;
+}
+.article h2 {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: underline;
+}
+.rightside {
+	width: 30%;
+	height: auto;
+	background-color:#535353;
+	padding: 0.5%;
+	margin: 1% 0%;	
+	float: right;
+	border: 2px solid #acacac;
+	border-radius: 50px 0px 0px 50px;
+	text-align: right;
+	color: white;
+}
+.rightside img {
+	width: 50px;
+}
+.footer {
+	height:none;
+	/*background-color: #acacac;*/
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	/*color: */
+}
+/*-----------------------------------------------------------------*/
+p{ 
+	color: white;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 12px;
+	font: normal;
+}
+/*-----------------------------------------------------------------*/
+.google_maps {
+	position: relative;
+	padding-bottom: 30%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+.google_maps iframe, .google_maps object, .google_maps embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*-----------------------------------------------------------------*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #8F8F8F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.form {
+    border-radius: 0px;
+    background-color: #424242;
+    padding: 20px;
+	width: 65%;
+	float: left;
+	color: white;
+}
+/*-----------------------------------------------------------------*/

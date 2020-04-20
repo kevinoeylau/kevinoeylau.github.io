@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+ErrorDocument 404 /404.html
+
+</IfModule>
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.kevinoeylau.site/$1 [R,L]

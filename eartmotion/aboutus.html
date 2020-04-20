@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="eartmotion">
+<meta name="keywords" content="unique bracelet, unique rings, unique necklace">
+<meta name="author" content="Kevin Lauren">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eartmotion ID</title>
+	
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
+	
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">	
+	
+</head>
+
+<body>
+<outer>
+   <div class="outer">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/up_arrow.png" alt=""/></button>	  
+<header>
+<div class="container-nav">
+	
+
+ <nav class="desk">
+	 <div class="logo" style="width: 10%; float: left;">
+		 <a href="index.html"><img src="img/logo.png" alt=""></a>
+	 </div>
+<div class="wrap">
+   <div class="search col-11 col-lg-12">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+	 <div class="cart" style="width: 20%; float: right;">
+		<ul>
+      <li><a href="">Login | Cart</a></li>
+		</ul>
+	 </div>
+	
+  </nav>	  
+ 
+
+  <nav class="desk-active">
+	  <br class="clearfloat"/>
+    <ul>
+      <li><a href="gallery.html">Premium Bracelets</a></li>
+      <li><a href="gallery.html">Premium Necklace</a></li>
+      <li><a href="gallery.html">Premium Rings</a></li>
+    </ul>
+	</nav>
+	
+  <nav class="mob">
+	  
+    <div class="hamburger-btn"><em class="fa fa-bars" aria-hidden="true"></em> <em class="fa fa-times" aria-hidden="true"></em>
+	  <img class="cart" src="img/cart.png" alt=""/>
+	  </div>
+<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <ul>
+      <li><a href="gallery.html">Premium Bracelets</a></li>
+      <li><a href="gallery.html">Premium Necklace</a></li>
+      <li><a href="gallery.html">Premium Rings</a></li>
+    </ul>
+	  
+	
+	</nav>
+
+
+</div> 
+</header> 
+
+
+<main>
+	<hero>
+	<div class="hero-image">
+  <div class="hero-text">
+    <img src="img/logo.png" width="170" height="" alt=""/>
+<br>
+    <a href="aboutus.html">About Us</a>
+	  <a href="contactus.html">Contact Us</a>
+  </div>
+</div>
+</hero>	
+<div class="main">
+	
+
+<div class="about-us">
+<div class="history">
+	<img src="img/logo.png" alt=""/>
+	<div class="history-inside">
+	<p>While traveling in Indonesia in 2009, Eartmotion Founders Laurentius Andi witnessed the incredible hardships faced by children growing up in impoverished communities in Indonesia. Wanting to help, they created Eartmotion, a company that would tackle Vitamin A Deficiency Disorder (VADD) in suffering children by selling spiritual jewelry, purposeful fashion, and fair trade items from around the world.</p>
+	<p>Eartmotion began as a simple idea of selling printed shirts has evolved into a lifestyle brand that helps address the needs of children, their families, and their communities in Indonesia</p>
+	</div>
+</div>
+	
+<div class="motto">
+<img src="img/hero2.jpg" alt=""/>	
+	<div class="motto-inside">
+	<p>Eartmotion is selling Premium Gemstone Bracelet made by Handmade. 100% real stone material and Swarovski Elements</p>
+	<p>Quality is our Priority</p>
+	</div>	
+</div>
+ </div>
+
+	
+
+</div>	
+</main>
+<footer id="footerouter">
+<div class="footer">
+  <div class="leftfoot">
+	  <div class="footer-social-icons">
+    <h2>Follow us on</h2>
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://www.instagram.com/eartmotion_indo/?hl=en" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+    </ul>
+</div>
+</div>
+	<div class="rightfoot">
+	<ul>
+	  <li><a href="aboutus.html">About Us *</a></li>
+	  <li><a href="">Site Map *</a></li>
+	  <li><a href="">Privacy Policy *</a></li>
+	  <li><a href="contactus.html">Contact Us </a></li>
+	</ul>
+		<br>
+		<p>© 2019 Eartmotion ID</p>
+	</div>
+<br class="clearfloat"/>
+</div>
+</footer>
+</div>
+</outer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/eartmotion.js"></script>
+<script type="text/javascript">
+	    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mob ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mob ul").removeClass("active");
+    });
+    });
+</script>	
+	
+		
+</body>
+</html>

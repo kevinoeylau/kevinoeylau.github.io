@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quick Quote</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	
+	
+<div id="outer">
+	
+
+	<header>
+		<div class="header">
+			<h1><img src="img/header-new.jpg" alt=""/>
+			</h1>
+		</div>
+	</header>
+	<nav>
+		<div class="nav">
+	<ul>
+	  <li><a href="bikeit.html" style="float:none">Home</a></li>
+	  <li><a href="gallery.html" style="float:none">Gallery</a></li>
+	  <li><a href="blog.html" style="float:none">Blog</a></li>
+	  <li><a href="Quick-Quote.html" style="float:none">Quick Quote</a></li>
+	  <li><a href="#" style="float:none">Contact Me</a></li>
+
+
+
+	</ul>
+			<br class="clearfloat">
+
+		</div>
+	</nav>
+	<main>
+
+		<div class="article">
+		  <!-- quick_quote.html -->
+     <form action="" method="post" id="theForm">
+        <fieldset>
+            <h1>Calculate a quote.</h1>
+			<div>
+				<fieldset>
+				<h2>Bikes - $10 each</h2>
+				<div>
+					<label for="quantity">Quantity</label>
+					<input type="number" name="quantity" id="quantity" value="1" min="1" required>
+				</div>
+				</fieldset>
+			</div>
+			
+			<div>
+				<fieldset>
+				<h2> Helmet - $1 each</h2>
+				<div>
+					<label for="accessories">Quantity</label>
+					<input type="number" name="accessories" id="accessories" value="0"  required>
+				</div>
+				</fieldset>
+			</div>
+			
+			<div>
+				<fieldset>
+				<div>
+					<label for="tax">GST (%)</label>
+					<input type="text" name="tax" id="tax" value="10%" readonly>
+				</div>
+				</fieldset>
+			</div>
+			
+			<div>
+				<label for="total">Total</label>
+				<input type="text" name="total" id="total" value="0">
+			</div>
+			<div>
+				<input type="submit" value="Calculate" id="submit">
+			</div>
+        </fieldset>
+    </form>
+    
+	</div>
+
+	<div class="aside">
+	  <h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
+	  <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+	</div>
+		<br class="clearfloat">
+	</main>
+	
+	<footer>
+	<div class="footer">
+	  <img src="img/footer-new1.jpg" alt=""/>
+	</div>
+	</footer>
+</div>	
+ <script src="js/quick_quote.js"></script>   
+</body>
+</html>

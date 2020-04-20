@@ -1,0 +1,129 @@
+﻿/*@charset "utf-8";
+ CSS Document 
+.skip {position: absolute; top: -1000px; left: -1000px; height: 1px; width: 1px; text-align: left; overflow: hidden;}*/
+
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #999999;
+}
+
+header {
+    padding: 1em;
+    background-color: #CCCCCC;
+}
+
+header img {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+main {
+    background-color: #666666;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#lefCol {
+    float: left;
+    width: 44%;
+    padding: 1em;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+
+#rigCol {
+    float: left;
+    width: 44%;
+    padding: 1em;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+
+footer {
+    clear: both;
+    padding: 1em;
+    background-color: #CCCCCC;
+}
+.clearfix {
+    display: block;
+	display: inline-block;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/* slightly enhanced, universal clearfix hack */
+
+.clearfix {
+    
+}
+
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+	display: inline-block;
+}
+
+
+/* close commented backslash hack */
+
+
+/*http://www.munkyonline.co.uk/web-design-articles-tutorials/css-3-column-layout.php*/
+
+
+/*To create the vertical columns (lefCol,rigCol) we need to apply float:left; to each of the divs. This will make them 'float' to the left edge of their container, which is the container div. When there are multiple floating divs, each div will float to the right side of the floating div preceding it. So as we have floated all of our divs to the left, they will all align next to each other from the left edge of #container, providing they don't extend beyond the width of #container. Otherwise a column may fall below the other columns rather than be along side them. You need to make sure the widths of the columns do not add up to more than 960px which is our defined page width. Our columns widths add up to 830px, remember to take into account the padding too, as I mentioned earlier, it will expand the width of the element.*/
+
+
+/*There is a bug in Mozilla browsers which requires us to use what is known as a Clearfix hack. Now this is caused because Mozilla browsers have an issue with floating elements and their container's height. When there are only floating elements within our #container div it cant resolve the height of the floating divs and so doesn't stretch to fit them. By applying the clearfix class the #container will expand to the height of it's floating divs.*/
