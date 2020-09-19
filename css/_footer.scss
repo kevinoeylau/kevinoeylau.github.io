@@ -1,0 +1,73 @@
+﻿/*--------------------------------footer section --------------------------------*/
+
+footer {
+    @include custom-button($blackgray);
+
+    .row {
+        width: $width100;
+        max-width: $maxwidth;
+        margin: $margin-auto;
+    }
+
+    .leftfoot {
+        float: left;
+        color: $white;
+        letter-spacing: 0.1em;
+        display: block;
+    }
+
+    .rightfoot {
+        float: left;
+        text-align: $aligncenter;
+        color: $white;
+    }
+
+    .extendfoot {
+        float: left;
+        list-style-type: none;
+        text-align: $aligncenter;
+
+        ul li {
+            list-style-type: none;
+            line-height: 02;
+
+            a {
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .social-icons {
+        color: $blackgray;
+
+        li {
+            margin: 12px 20px 0;
+            display: inline;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    #myBtn {
+        @include middle-object();
+        transform: translate(-50%, -150%);
+        border: none;
+        outline: none;
+        background-color: red;
+        color: $white;
+        cursor: pointer;
+        padding: 8px 11px;
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+
+        &:hover {
+            background-color: $black;
+            transition: 0.4s;
+        }
+    }
+}

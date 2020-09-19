@@ -1,0 +1,208 @@
+﻿/*--------------------------------header nav section --------------------------------*/
+
+.skip-main {
+    padding: 1em;
+    position: absolute;
+    left: 150px;
+    top: -50px;
+    z-index: 1000;
+    color: $white;
+    background-color: rgba(35, 35, 35, 0.1);
+
+    &:focus {
+        position: absolute;
+        top: 0;
+        color: $white;
+        background: $focus;
+    }
+}
+
+#brand-logo {
+    font-size: 34px;
+    width: 74px;
+    border-radius: 100px;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0px 0px 30px $focus;
+        transition: 0.4s;
+    }
+
+    &:focus {
+        color: $white;
+        background: $focus;
+        transition: 0.3s;
+    }
+}
+
+.navbar {
+    padding: 5px 10px;
+}
+
+#app-navbar {
+    transition: 0.5s ease;
+    background-color: rgba(35, 35, 35, 0.3);
+
+    &.scrolled {
+        transition: 0.5s ease;
+        background: linear-gradient(to right, $gradnav) !important;
+    }
+
+    li {
+        padding: 7px;
+        font-size: 16px;
+        color: $white;
+    }
+}
+
+.nav-item {
+    a {
+    color: $white;
+
+    @extend %naveffect;
+
+    &:focus {
+        color: $white;
+        background: $focus;
+        transition: 0.3s;
+    }
+}
+}
+
+.dropdown {
+    &:hover > .dropdown-menu {
+        display: block;
+        background-color: rgba(35, 35, 35, 0.7);
+    }
+
+    > .dropdown-toggle {
+        &:active,
+        &:focus {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+            color: $blackgray;
+        }
+
+        &:hover {
+            color: $black;
+            transition: 0.4s;
+        }
+
+        &:focus {
+            color: $black;
+            background: $focus;
+            transition: 0.3s;
+        }
+    }
+}
+
+/*--------------------------- cover --------------------*/
+
+.masthead {
+    background: url(../images/lighthouse.jpg) center;
+    background-size: cover;
+    padding: 1em 2em;
+    text-align: $aligncenter;
+    text-shadow: $textshadow;
+    color: $white;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.9);
+    overflow: hidden;
+    h1 {
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        color: #eee;
+        font-size: 10vw;
+        padding: 1.3em 0;
+        overflow: hidden;
+    }
+}
+
+
+
+.bounce-top {
+    -webkit-animation: bounce-top 0.9s infinite both;
+    animation: bounce-top 0.9s infinite both;
+    color: $white;
+    @include middle-object();
+    top: 90%;
+    transform: translate(-50%, -100%);
+}
+
+@-webkit-keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    25%, 55%, 75%, 87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+
+@keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    25%, 55%, 75%, 87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}

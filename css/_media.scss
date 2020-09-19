@@ -1,0 +1,250 @@
+﻿/*------------------------nav bar here-------------*/
+
+@media screen and (max-width: 768px) {
+  #app-navbar {
+    background: linear-gradient(to right, $gradnav) !important;
+    transition: 0.5s ease;
+    background-color: rgba(35, 35, 35, 1);
+  }
+}
+
+/*------------------------index page here-------------*/
+
+@media screen and (max-width: 700px) {
+  .leftside {
+    float: none;
+    width: auto;
+    border: 0;
+    height: 100vh;
+  }
+  .neon-video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $width100;
+    height: 100vh;
+    overflow: hidden;
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: 100vh;
+    }
+  }
+  div.footer-link {
+    a {
+      display: none;
+    }
+    padding: 50px 0;
+    margin-top: 260px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  #app-navbar li,
+  .navbarDropdown a {
+    padding: 2px 0;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .neon-video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $width100;
+    height: 100vh;
+    overflow: hidden;
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: 100vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $blackgray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: $white;
+      display: block;
+      transition: 0.3s;
+      &:hover {
+        color: #f1f1f1;
+      }
+    }
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  }
+  .slidebutton {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    transform: translate(-0%, 0%);
+  }
+  div.nav-index {
+    display: none;
+  }
+  .centered {
+    margin: 0;
+    @include middle-object();
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .sidenav {
+    padding-top: 15px;
+    a {
+      font-size: 17px;
+      margin-right: 20px;
+    }
+  }
+}
+
+/*------------------------footer here-------------*/
+
+@media screen and (max-width: 600px) {
+  .leftfoot {
+    display: none;
+  }
+  .rightfoot {
+    float: none;
+    border: 0;
+    padding: 30px 0;
+    margin: $margin-auto;
+    width: $width100;
+    text-align: $aligncenter;
+    height: 75px;
+  }
+  .extendfoot {
+    display: none;
+  }
+  .sep10 {
+    transform: translateY(-85%) translateY(-85%) scaleY(1, 2);
+    transform-origin: top;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .masthead {
+    h1 {
+      padding: 150px 0;
+      font-size: 12vw;
+    }
+    height: 100vh;
+  }
+  .parallax {
+    min-height: 250px;
+  }
+  .caption {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photo-container,
+  .interior-container {
+    float: none;
+    width: auto;
+    border: 0;
+    img {
+      float: none;
+      width: $width100;
+      border: 0;
+      margin: 20px auto;
+      padding: 20px;
+      &:hover {
+        opacity: 1;
+        box-shadow: $boxshadow;
+        transform: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-cv,
+  .sidebar {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin: 0;
+  }
+  .work-experience {
+    border: 0;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .info {
+    width: 100%;
+  }
+  .education {
+    float: none;
+    border: 0;
+    padding: 0;
+    margin: $margin-auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mixtape1,
+  .mixtape2,
+  .mixtape3,
+  .mixtape4,
+  .mixtape5,
+  .mixtape6 {
+    float: none;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-social,
+  .contact-form {
+    width: 100%;
+    margin: 5% auto;
+  }
+  .contact-box {
+    width: 95%;
+  }
+  .contact-form input[type="submit"] {
+    width: 90%;
+    margin: 0.45em auto;
+    float: none;
+  }
+  .btn-mod.btn-large {
+    padding: 6px 16px;
+    font-size: 11px;
+  }
+  .form-title {
+    font-size: 20px;
+  }
+}

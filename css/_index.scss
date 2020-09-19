@@ -1,0 +1,129 @@
+﻿@import 'allcolor';
+@import 'header';
+
+/* ------------------------------------------------------------ half index ---------------------------*/
+
+.neon-video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $width100;
+  height: 100%;
+  overflow: hidden;
+
+  video {
+    width: 100vw;
+  }
+}
+
+.mainindex {
+  width: $width100;
+  height: 100vh;
+  width: $width100;
+  background: linear-gradient(to right, $gradnav) !important;
+  color: $white;
+
+  background-color: $blackgray;
+}
+
+.centered {
+  margin: 0;
+  @include middle-object();
+  transform: translate(-50%, -100%);
+
+  img {
+    width: 150px;
+    border-radius: 50%;
+
+    &:hover {
+      box-shadow: 0px 0px 30px $focus;
+      transition: 0.4s;
+    }
+  }
+}
+
+.nav-index {
+  text-align: $aligncenter;
+  margin-top: 100px;
+  @include middle-object();
+  transform: translate(-50%, 0%);
+  .button a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.button:hover a {
+    background: white;
+    color: #161616;
+    transition: 0.3s;
+}
+  a {
+    color: $white;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    /*border: 1px solid white;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    transition: 0.3s;*/
+    text-shadow: $textshadow;
+    @extend %naveffect;
+    &:hover {
+      background: white;
+      color: #161616;
+      transition: 0.3s;
+    }
+    &:focus {
+      background: $focus;
+      padding: 10px;
+      transition: 0.5s;
+    }
+    @media (max-width: 1400px) {
+      font-size: 18px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 15px;
+    }
+    @media (min-width: 1600px) {
+      font-size: 23px;
+      margin: 0px 5px;
+      padding: 10px 10px;
+    }
+  }
+
+  li {
+    margin: 50px;
+    display: inline;
+  }
+}
+
+.footer-link {
+  /*background-color: rgba(35,35,35,0.30);
+	*/
+  text-align: $aligncenter;
+  padding: 10px 0;
+  margin-top: 230px;
+  @include middle-object();
+  transform: translate(-50%, 0%);
+
+  p {
+    background-color: transparent;
+  }
+}
+
+.sidenav,
+.slidebutton {
+  display: none;
+}
+

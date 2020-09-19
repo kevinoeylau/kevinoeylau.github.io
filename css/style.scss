@@ -1,0 +1,852 @@
+@import 'reset';
+@import 'allcolor';
+@import 'transition';
+@import 'index';
+@import 'header';
+@import 'footer';
+@import 'media';
+/*--------------------------- --------------------------*/
+.glowing {
+    box-shadow:3px 3px 25px 9px #10c9ff ,-3px -3px 10px 0px #00ff00 ;
+}
+
+//animations variables
+$full:5%;
+$half: $full/2;
+$object_rotation_speed:60s;
+$float_speed:200s;
+$orbit_speed:2s;
+
+
+.shape {
+	position: absolute;
+	opacity: 1;
+	transition: opacity .8s;
+    overflow:hidden;
+}
+//crna linija kriva
+.shape.object-1  {
+	top: 9%;
+	left: 10%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//crna linija prava
+.shape.object-2{
+	top: 10%;
+	left: 71%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//crveni kvadrat
+.shape.object-3 {
+	top: 29%;
+	left: 49%;
+	border: 1px solid red;
+	animation: rotate $object_rotation_speed 0s infinite linear;	//moze i reverse ako treba
+}
+//zuti trougao
+.shape.object-4 {
+	top: -2%;
+	left: 97%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//zelena kriva linija
+.shape.object-5 {
+	top: 24%;
+	left: 90%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//crna mala kocka
+.shape.object-6 {
+	top: 155%;
+	left: 40%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//kriva crna linija 2
+.shape.object-7 {
+	top: 108%;
+	left: 74%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//orange kockica
+.shape.object-8 {
+	top: 40%;
+	left: 79%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//zelena kratka linija
+.shape.object-9 {
+	top: 42%;
+	left: 25%;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+//crni mali trougao
+.shape.object-10 {
+	top: 90%;
+	left: 5%; 
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+.shape.object-11 {
+	top: 53%;
+	left: 5%;
+	width:100%;
+	margin:0 auto;
+	animation: rotate $object_rotation_speed 0s infinite linear;
+}
+
+///////////////////////////////////////////
+
+          //rotate right
+
+//////////////////////////////////////////
+
+@keyframes rotate {
+from { transform: rotate(0);
+	transform-origin: center;}
+to   { transform: rotate(360deg);
+	transform-origin: center;}
+}
+
+.rotate{
+	animation: rotate 40s 0s infinite linear;
+}
+///////////////////////////////////////////
+
+          //rotate left
+
+//////////////////////////////////////////
+
+@keyframes rotate-reverse {
+from { transform: rotate(360deg);
+	transform-origin: center;}
+to   { transform: rotate(0deg);
+	transform-origin: center;}
+}
+
+.rotate-reverse{
+	animation: rotate-reverse 50s 0s infinite linear;
+}
+//////////////////////////////////////////////
+
+
+///////////////////////////////////////////
+
+          //xAxis
+
+//////////////////////////////////////////
+
+
+@keyframes xAxis {
+	  0% {
+    animation-timing-function: ease-in;
+    transform: translateX(0px);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(120px);
+  }
+}
+
+.xAsis{
+	animation: xAxis 1s infinite ease-in;
+}
+
+.xAxis{
+	width:1px;
+height:1px;
+}
+///////////////////////////////////////////
+
+          //yAxis
+
+//////////////////////////////////////////
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-100px);
+  }
+}
+
+.yAxis{
+	animation: yAxis 2.5s infinite ease-out;
+}
+
+
+///////////////////////////////////////////
+
+          //Floating
+
+//////////////////////////////////////////
+.float{
+  animation: Floating linear $float_speed;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: Floating linear $float_speed;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: Floating linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: Floating linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: Floating linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+	
+	position: absolute;
+	top: 150px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+@keyframes Floating{
+  0% {
+    transform:  translate(0%,0%)  ;
+  }
+  10% {
+    transform:  translate(0%,0%) ;
+  }
+  20% {
+    transform:  translate(0%,0%)  ;
+  }
+  30% {
+    transform:  translate(0%,0%)  ;
+  }
+  40% {
+    transform:  translate(0%,0%)  ;
+  }
+  50% {
+    transform:  translate(0%,0%)  ;
+  }
+	  60% {
+    transform:  translate(0%,0%)  ;
+  }
+  70% {
+    transform:  translate(0%,0%)  ;
+  }
+  80% {
+    transform:  translate(0%,0%)  ;
+  }
+  90% {
+    transform:  translate(0%,0%)  ;
+  }
+	  100% {
+    transform:  translate(120%,0%)  ;
+  }
+}
+
+
+
+
+
+
+
+  
+
+
+/* Setting fade transition and default settings */
+body {
+    transition: background-color 1s ease;
+  }
+  
+
+  
+  /* colours */
+  .color-dark, .row-1 {
+    background-color: #191919;
+    transition: background-color 1s ease;
+  }
+  .color-indigo, .row-2 {
+    background-color: #191919;
+    transition: background-color 1s ease;
+  }
+  .color-blue, .row-3 {
+    background-color: #191919;
+    transition: background-color 1s ease;
+  }
+  .color-green {
+    background-color: #191919;
+    transition: background-color 1s ease;
+  }
+  .color-yellow {
+    background-color: #191919;
+  }
+  .color-orange {
+    background-color: #F19031;
+  }
+  .color-red {
+    background-color: #F2293A;
+  }
+
+canvas{
+    display:block;
+    vertical-align:bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  /*.cursor {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+    mix-blend-mode: difference;
+  }*/
+  .title-index {
+    font-weight: 800;
+    color: transparent;
+    font-size: 120px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background-position: 40% 50%;
+    -webkit-background-clip: text;
+    position: relative;
+    text-align: center;
+    line-height: 90px;
+    letter-spacing: -8px;
+  }
+  
+  .subtitle {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+
+
+#inner-wrap {
+	position: absolute;
+	top: 0rem;
+	left: 0;
+	right: 0;
+	bottom: 3rem;
+	display: table;
+	width: 100%;
+	height: 100%;
+	min-height: 322px;
+	overflow: visible;
+}
+
+
+.logo {
+	position: absolute;
+	z-index: 1;
+	top: 3rem;
+	left: 2rem;
+	display: block;
+	width: 9vmax;
+	height: 9vmax;
+	min-width: 50px;
+	min-height: 50px;
+}
+
+.waves {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	min-width: 100%;
+	min-height: 70%;
+	margin: auto 0;
+}
+@media screen and (max-width: 1450px) {
+  #inner-wrap {
+    overflow: hidden;
+  }
+  .waves {
+    overflow: hidden;
+  }
+}
+.text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	width: 83%;
+	height: 100%;
+	margin: auto;
+}
+
+img, svg {
+	display: block;
+	overflow: visible;
+	pointer-events: none;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+
+/*--------------------------- loader -------------------*/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 3s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 3s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }  
+/*--------------------------- photo and 3d -------------*/
+
+.kevin-gallery {
+    padding: 20px;
+
+    img {
+        border-radius: 2px;
+        width: $width100;
+    }
+    .baguetteBox-button {
+        background-color: transparent !important;
+    }
+
+}
+
+.photo-container {
+    width: $width100;
+    max-width: $maxwidth;
+    margin: $margin-auto;
+}
+
+.photo-container img:hover,
+.interior-container img:hover {
+    box-shadow: $boxshadow;
+    transition: 0.4s;
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.triangle{
+    fill: transparent;
+    stroke: white;
+    stroke-width: 8;
+    transform: rotate(90deg);
+    margin-right: 80%;
+    position: absolute;
+    margin-top: 18%;
+    color: #eee;
+}
+.rotate-text-1 {
+    margin-right: -110%;
+    position: absolute;
+    margin-top: 20%;
+    color: #eee;
+    font-size: 100px;
+  }
+  [data-aos="rotate-ac"] {
+    transform: rotate(0deg);
+    transition-property: transform;
+  }
+  
+  [data-aos="rotate-ac"].aos-animate {
+    transform: rotate(-90deg);
+  }
+  .rotate-text-2 {
+    transform: rotate(70deg);
+
+    color: #eee;
+    font-size: 100px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+
+    
+  }
+  .rotate-text-3 {
+    font-size:15vw;
+    transform: rotate(90deg);
+    margin-right: -50%;
+    position: absolute;
+    margin-top: 25%;
+    color: #eee;
+    z-index: 0;
+  }
+
+  [data-aos="rotate-c"] {
+    transform: rotate(180deg);
+    transition-property: transform;
+  }
+  
+  [data-aos="rotate-c"].aos-animate {
+    transform: rotate(0deg);
+  }
+.image-stack {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+.image-stack::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+  
+  .image-stack__item--top {
+      float: right;
+      width: 66%;
+      margin-left: -100%;
+      padding-top: 15%; // arbitrary
+      position: relative;
+      z-index: 1;
+  }
+  
+  .image-stack__item--bottom {
+      float: left;
+      width: 75%;
+  }
+
+  .image-stack__item--top-1 {
+    float: left;
+    width: 66%;
+    margin-right: -100%;
+    padding-top: 40%; // arbitrary
+    position: relative;
+    z-index: 1;
+    h2 {
+        text-align: right;
+        font-weight: bold;
+        color:#e73c7e;
+        padding-right: 2%;
+    }
+}
+
+.image-stack__item--bottom-1 {
+    float: right;
+    width: 75%;
+    padding-left: 10%;
+
+}
+
+.image-stack__item--top-2 {
+    float: left;
+    width: 66%;
+    margin-right: -100%;
+    padding-top: 15%; // arbitrary
+    position: relative;
+    z-index: 1;
+
+}
+
+.image-stack__item--bottom-2 {
+    float: right;
+    width: 75%;
+}
+/*----------------------music page here-------------*/
+
+.music-container {
+    width: $width100;
+    margin: 5% auto;
+    iframe {
+        width: $width100;
+        height: 300px;
+        border: none;
+    }
+    .mixtape {
+        width: 30%;
+        float: left;
+        margin: 2% 1%;
+    }
+}
+
+
+/*--------------------------- CV -------------------------*/
+
+.container-cv {
+    margin: 2%;
+    width: $width100;
+    max-width: $maxwidth;
+}
+
+.sidebar {
+    width: 30%;
+    background: #595959;
+    color: $white;
+    border-radius: 25px;
+    box-shadow: $boxshadow;
+    img {
+        width: $width100;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .vcard {
+        text-align: $aligncenter;
+        padding: 20px;
+        span {
+            font-size: 20px;
+        }
+    }
+    .skillbar-cv {
+        padding: 10px;
+        .skillbar {
+            position: relative;
+            display: block;
+            margin-bottom: 15px;
+            background: #eee;
+            height: 35px;
+            border-radius: 3px;
+            transition: 0.4s linear;
+            transition-property: width, background-color;
+            .skillbar-title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-weight: bold;
+                font-size: 13px;
+                color: $white;
+                background: #6adcfa;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                span {
+                    display: block;
+                    background: rgba(0, 0, 0, 0.1);
+                    padding: 0 20px;
+                    height: 35px;
+                    line-height: 35px;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                }
+            }
+            .skillbar-bar {
+                height: 35px;
+                width: 0px;
+                background: $focus;
+                border-radius: 3px;
+            }
+            .skill-bar-percent {
+                position: absolute;
+                right: 10px;
+                top: 0;
+                font-size: 11px;
+                height: 35px;
+                line-height: 35px;
+                color: $blackgray;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}
+
+.content-cv {
+    width: 65%;
+    margin-left: 5%;
+    padding: 20px 0;
+    .work-experience,
+    .education {
+        background: $white;
+        box-shadow: $boxshadow;
+        border-radius: 25px;
+    }
+    .info {
+        padding: 5px 2px;
+        border-bottom: 1px solid #bdbdbd;
+    }
+    .sub-heading {
+        font-weight: bold;
+    }
+    .duration {
+        color: #333;
+        font-size: 15px;
+    }
+}
+
+
+/*--------------------------------contact us section --------------------------------*/
+
+.contact {
+    .heading {
+        h2 {
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            span {
+                color: $focus;
+            }
+        }
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.7;
+            color: $blackgray;
+            margin: 20px 0 60px;
+            padding: 0;
+        }
+    }
+    .leftcontact,
+    .rightcontact {
+        width: $width100;
+    }
+    .leftcontact {
+        span {
+            color: $blackgray;
+        }
+        a {
+            color: $blackgray;
+            text-decoration: underline;
+        }
+    }
+    .social-icons-contact {
+        ul {
+            color: $blackgray;
+            li {
+                text-decoration: none;
+                display: inline;
+                margin: 0 10px;
+                a {
+                    color: $blackgray;
+                    &:hover {
+                        color: $focus;
+                        text-decoration: none;
+                        transition: 500ms;
+                    }
+                }
+            }
+        }
+    }
+    video {
+        width: $width100;
+        height: 100%;
+    }
+    .container-maps {
+        width: $width100;
+        max-width: $maxwidth;
+        margin: $margin-auto;
+        iframe {
+            width: $width100;
+            height: 400px;
+            border: none;
+        }
+    }
+}
+
+.parallax {
+    /* The image used 
+  background-image: url('../images/lighthouse.jpg');*/
+    /* Full height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-animation: color-change-4x 6s linear infinite alternate both;
+    animation: color-change-4x 6s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-4x {
+    0% {
+        background: #ee7752;
+    }
+
+    33% {
+        background: #e73c7e;
+    }
+
+    66% {
+        background: #23a6d5;
+    }
+
+    100% {
+        background: #23d5ab;
+    }
+}
+
+@keyframes color-change-4x {
+    0% {
+        background: #ee7752;
+    }
+
+    33% {
+        background: #e73c7e;
+    }
+
+    66% {
+        background: #23a6d5;
+    }
+
+    100% {
+        background: #23d5ab;
+    }
+}
+
+.caption {
+    @include middle-object();
+    left: 0;
+    width: $width100;
+    text-align: $aligncenter;
+
+    
+    span {
+        &.border {
+            background-color: $blackgray;
+            color: $black;
+            padding: 18px;
+            font-size: 25px;
+            border-radius: 20px;
+            @include custom-button($yellow);
+        }
+
+        a {
+            color: $white;
+        }
+    }
+}
